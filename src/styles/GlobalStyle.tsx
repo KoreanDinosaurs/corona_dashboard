@@ -11,8 +11,10 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         padding:0;
         box-sizing: border-box;
+        color: ${(props) => props.theme.textColor};
+        background-color: ${(props) => props.theme.bgColor};
     }
-
+    
     svg {
         cursor: pointer;
     }
@@ -22,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
         -webkit-user-select: auto;
         -ms-user-select: auto;
         user-select: auto;
+    }
+
+    button {
+        cursor: pointer;
     }
 
     body {
